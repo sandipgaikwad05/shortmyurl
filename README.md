@@ -22,8 +22,8 @@ Access application using local server
 http://localhost:8000/
 ```
 ### Reasoning behind design and any trade-offs
-####Used md5 hash function and converted to hex digits to get unique slug. This can be improved to reduced length of the slug.
-####Validations to take input from end users can be improved.
+#### Used md5 hash function and converted to hex digits to get unique slug. This can be improved to reduced length of the slug.
+#### Validations to take input from end users can be improved.
 
 ### Explanation of what could be done with more time
 #### Improve hash function to reduce length of the short url
