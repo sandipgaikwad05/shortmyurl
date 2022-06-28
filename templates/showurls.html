@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show all the urls</title>
+</head>
+<body>
+    <div align="center"><a href="/" style="font-size: 15px; ">Go Back Home</a></div>
+    <br>
+    <br>
+    <table border="1px solid #000">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Original url</th>
+                <th>Slug/Hash created</th>
+                <th>New url</th>
+                <th>Test</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        {% for i in urls %}
+        <tbody>
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.old}}</td>
+                <td>{{i.slug}}</td>
+                <td >{{i.new}}</td>
+                <td ><a href="{{i.new}}">Click</a></td>
+                <td>{{i.time}}</td>
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+</body>
+</html>
