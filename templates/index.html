@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Short My URL</title>
+    <style>
+        table {
+            margin-left: 20%;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Short My URL</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <table>
+            <tbody>
+                <tr>
+                    <td><label>URL</label></td>
+                    <td><input type="text" name="url" size="100" value="https://docs.djangoproject.com/en/4.0/ref/models/querysets/"></td>
+                </tr>
+                <tr>
+                    <td><button>Submit URL</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
